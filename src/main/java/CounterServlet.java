@@ -28,10 +28,19 @@ import java.io.PrintWriter;
 public class CounterServlet extends HttpServlet{
     public int counter=0;
 
-    protected void doGet(HttpServletRequest request, HttpServletResponse response)
-        throws IOException {
-        counter++;
-
-        response.getWriter().println("<h1> count currently is " + counter + " on this page load.</h1>" );
+//    protected void doGet(HttpServletRequest request, HttpServletResponse response)
+//        throws IOException {
+//        counter++;
+//
+//        response.getWriter().println("<h1> count currently is " + counter + " on this page load.</h1>" );
+//    }
+protected void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
+    if(request.getParameter("reset") != null && request.getParameter("reset").equalsIgnoreCase("reset")){
+        counter = 0;
     }
+    counter++;
+
+    response.getWriter().println("<h1>The count currently is " + counter + " on this page load.</h1>");
+
+}
 }

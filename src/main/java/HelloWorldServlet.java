@@ -16,7 +16,7 @@ public class HelloWorldServlet extends HttpServlet {
         String outputResp = "<h1>Hello, World!</h1>";
 
         if (request.getParameter("name") != null) {
-            outputResp = "Hello, " + request.getParameter("name") + "!";
+            outputResp = "<h1>Hello, " + request.getParameter("name") + "!"+"</h1>";
         }
 
         PrintWriter out = response.getWriter();
