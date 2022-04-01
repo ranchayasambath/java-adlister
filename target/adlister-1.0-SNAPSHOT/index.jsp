@@ -31,7 +31,7 @@
     My favorite food is: ${param.fav_food}</h5>
 
 <h5>What was our secret message?<br>
-    ${message}</h5> 0-
+    ${message}</h5>
 View the page source!
 <%-- this is a JSP comment, you will *not* see this in the html --%>
 <!-- this is an HTML comment, you *will* see this in the html -->
