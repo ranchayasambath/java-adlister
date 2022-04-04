@@ -56,7 +56,11 @@ public class BeanTest {
         quoteList.add(quote5);
 
         for(Quote quote : quoteList){
-            System.out.println(quote.getAuthor().getFirstName()+ " "+ quote.getAuthor().getLastName()+" : "+'"'+quote.getContent()+'"');
+            String firstname = quote.getAuthor().getFirstName();
+            String lastname = quote.getAuthor().getLastName();
+            String content = quote.getContent();
+
+            System.out.println(firstname + " "+ lastname + " : " +'"'+ content +'"');
         }
     }
 }
