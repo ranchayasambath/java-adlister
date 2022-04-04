@@ -12,7 +12,7 @@
 </head>
 <body>
 <form method="POST" action="/guess">
-    <label>Guess between 1 and 3: </label>
+    <label>Guess between 1 and 3: </label><br>
     <input type="text" name="guess-input">
     <button type="submit">Submit</button>
 </form>

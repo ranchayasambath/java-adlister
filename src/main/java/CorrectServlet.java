@@ -8,9 +8,9 @@ import java.io.IOException;
 @WebServlet (name= "CorrectServlet", urlPatterns = "/correct")
 public class CorrectServlet extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException{
-        String outcome = "Win!";
+        String correctOutcome = "Win!";
 
-        request.setAttribute("outcome",outcome);
+        request.setAttribute("outcome",correctOutcome);
         request.getRequestDispatcher("outcome.jsp").forward(request,response);
     }
 }

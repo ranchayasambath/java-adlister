@@ -11,6 +11,6 @@
     <title>Outcome</title>
 </head>
 <body>
- <h1>You${outcome}</h1>
+ <h1>You ${outcome}</h1>
 </body>
 </html>
